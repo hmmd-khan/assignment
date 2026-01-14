@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class area {
+    public static void main(String[]args) {
+        Scanner dis = new Scanner(System.in);
+        System.out.print("Enter radius of circle");
+        double r;
+        while(true){
+            r = dis.nextDouble();
+            if(r>0){
+                break;
+            }
+            System.out.print("invalid:radius must be positive Enter radius of circle again");
+        }
+        double area=Math.PI*r*r;
+        double cf=2*Math.PI*r;
+
+        System.out.print("The area of circle is "+area);
+        System.out.print(" and circumference is "+cf);
+    }
+}
