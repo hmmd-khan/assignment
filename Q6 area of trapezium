@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class area {
+    public static void main(String[]args) {
+        Scanner dis = new Scanner(System.in);
+        System.out.print("Enter height of trapezium");
+        double h;
+        while(true){
+            h = dis.nextDouble();
+            if(h>0){
+                break;
+            }
+            System.out.print("invalid:height must be positive enter height again");
+        }
+        System.out.print("Enter length of parallel side a");
+        double a;
+        while(true){
+            a = dis.nextDouble();
+            if(a>0){
+                break;
+            }
+            System.out.print("invalid:length must be positive enter length again");
+        }
+        System.out.print("Enter length of parallel side b");
+        double b;
+        while(true){
+            b = dis.nextDouble();
+            if(b>0){
+                break;
+            }
+            System.out.print("invalid:length must be positive enter length again");
+        }
+
+        double k=(a+b)/2*h;
+        System.out.print("The area of trapezium  is "+k);
+    }
+}
