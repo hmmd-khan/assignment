@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class area {
+    public static void main(String[]args) {
+        Scanner dis = new Scanner(System.in);
+        System.out.print("Enter the length of side a");
+        double a;
+        while(true){
+            a = dis.nextDouble();
+            if(a>0){
+                break;
+            }
+            System.out.print("invalid:height must be positive enter height again");
+        }
+        System.out.print("Enter length of side b");
+        double b;
+        while(true){
+            b = dis.nextDouble();
+            if(b>0){
+                break;
+            }
+            System.out.print("invalid:length must be positive enter length again");
+        }
+        System.out.print("Enter length of side c");
+        double c;
+        while(true){
+            c = dis.nextDouble();
+            if(c>0){
+                break;
+            }
+            System.out.print("invalid:length must be positive enter length again");
+        }
+
+        double s=(a+b+c)/2;
+        double hero=s*(s-a)*(s-b)*(s-c);
+        double area=Math.sqrt(hero);
+        System.out.print("The area of triangle is "+area);
+    }
+}
