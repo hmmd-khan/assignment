@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class percentage {
+    public static void main(String[]args) {
+        Scanner dis = new Scanner(System.in);
+        System.out.print("Enter obtained marks");
+        double a;
+        while(true){
+            a = dis.nextDouble();
+            if(a>0){
+                break;
+            }
+            System.out.print("invalid:marks must be positive Enter obtained marks again");
+        }
+        System.out.print("Enter total marks");
+        double b;
+        while(true){
+            b = dis.nextDouble();
+            if(b>0){
+                break;
+            }
+            System.out.print("invalid:marks must be positive Enter total marks again");
+        }
+        double c = (a / b) * 100;
+        System.out.print(c+"%");
+
+    }
+}
