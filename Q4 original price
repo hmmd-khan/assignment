@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class original {
+    public static void main(String[]args) {
+        Scanner dis = new Scanner(System.in);
+        System.out.print("Enter discounted price");
+        double dprice;
+        while(true){
+            dprice = dis.nextDouble();
+            if(dprice>0){
+                break;
+            }
+            System.out.print("invalid:discounted price must be positive Enter discounted price again");
+        }
+        System.out.print("Enter discount percent ");
+        double dper;
+        while(true){
+            dper = dis.nextDouble();
+            if(dper>0){
+                break;
+            }
+            System.out.print("invalid:discount percent must be positive Enter discount percent again");
+        }
+        double d=1-dper/100;
+        double op=dprice/d;
+        System.out.print("The orignal price is "+op);
+    }
+}
