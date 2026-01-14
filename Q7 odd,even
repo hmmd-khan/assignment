@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class values {
+    public static void main(String[] args) {
+        Scanner dis = new Scanner(System.in);
+        System.out.print("Enter the value");
+        double h=dis.nextDouble();
+        double g=h%2;
+        if(g==0) {
+            System.out.print(h+" is even value");
+        }
+            else{
+                System.out.print(h+" is odd value");
+            }
+    }
+}
