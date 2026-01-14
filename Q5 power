@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class power {
+    public static void main(String[]args) {
+        Scanner dis = new Scanner(System.in);
+        System.out.print("Enter voltage");
+        double volt;
+        while(true){
+            volt = dis.nextDouble();
+            if(volt>0){
+                break;
+            }
+            System.out.print("invalid:voltage must be positiveenter voltage again");
+        }
+        System.out.print("Enter amphere ");
+        double amp;
+        while(true){
+            amp = dis.nextDouble();
+            if(amp>0){
+                break;
+            }
+            System.out.print("invalid:amphere must be positive ampere again");
+        }
+        double watts=volt*amp;
+        System.out.print("The power is "+watts);
+    }
+}
