@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class part_a_inttobinary{
+    public static void main (String[]args){
+    Scanner sc =new Scanner(System.in);
+    //getting number as input from user
+    System.out.println("Enter a Number");
+    int n=sc.nextInt();
+    //defined a string to store the result
+    String bin="";
+    // logic
+        for (int i=0;n>0;i++){
+           int rem=n%2;
+            bin=rem+bin;
+            n=n/2;
+        }
+    //result
+        System.out.println(bin);
+    }
+}
+    
